@@ -322,7 +322,7 @@ func (otp *Totp) Url() (string, error) {
 func (otp *Totp) QR() ([]byte, error) {
 
 	// get the URL
-	u, err := otp.url()
+	u, err := otp.Url()
 
 	// check for errors during initialization
 	// this is already done on the URL method
